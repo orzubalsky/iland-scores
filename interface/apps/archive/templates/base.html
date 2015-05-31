@@ -1,0 +1,26 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>{% block title %}iLAND Score Archive{% endblock title %}</title>
+
+    <link rel="stylesheet" type="text/css" href={% static "archive/css/base.css" %} />
+    {% block extra_css %}{% endblock %}
+</head>
+
+<body>
+    {% block nav %}{% endblock nav %}
+    <main>
+        {% block content %}
+        {% endblock content %}
+    </main>
+    <script type="text/javascript" src={% static "archive/bower_components/jquery/dist/jquery.min.js" %}></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

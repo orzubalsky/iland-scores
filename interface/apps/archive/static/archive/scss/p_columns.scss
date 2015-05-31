@@ -1,0 +1,38 @@
+body {
+  font-family: 'Ubuntu Mono';
+  color: #141414;
+  font-size: 10pt;
+  line-height: 1.7; }
+
+main {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  main:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.column {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.3333333333%;
+  float: left;
+  padding-left: 0.8333333333%;
+  padding-right: 0.8333333333%; }
+
+.score-1 {
+  margin-top: 37vh; }
+
+.score-2 {
+  margin-top: 46vh; }
+
+.score-3 {
+  margin-top: 84vh; }
+
+.score-title {
+  text-transform: uppercase;
+  font-size: 10pt;
+  line-height: 1.7;
+}

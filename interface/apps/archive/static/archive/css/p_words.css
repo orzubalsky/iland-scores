@@ -1,0 +1,22 @@
+body {
+  font-family: 'Ubuntu Mono';
+  color: #141414;
+  font-size: 10pt;
+  line-height: 1.7; }
+
+main {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+
+main:after {
+  content: " ";
+  display: block;
+  clear: both; }
+
+.score {
+  color: white; }
+
+.score .sign {
+  color: black;
+  cursor: pointer; }

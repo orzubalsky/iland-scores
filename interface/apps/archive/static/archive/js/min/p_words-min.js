@@ -1,0 +1,2 @@
+var $signs=$(".sign");$signs.on("mouseenter",function(){var s=$(this).parents(".score");s.css("color","#999")}),$signs.on("mouseleave",function(){var s=$(this).parents(".score");s.css("color","#fff")});
+//# sourceMappingURL=./p_words-min.js.map

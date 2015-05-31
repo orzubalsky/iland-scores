@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}{{ block.super|title }} : Scrolly{% endblock title %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href={% static "archive/css/p_scroll.css" %} />
+{% endblock extra_css %}
+
+{% block nav %}
+<nav>
+    <a class="home" href="{% url 'home' %}">&larr;</a>
+</nav>
+{% endblock nav %}
+
+{% block content %}
+<div class="parallax">
+    <div id="group1" class="parallax__group">
+        <div class="parallax__layer parallax__layer--base">
+            <div class="title">Listen to the softest sound you can hear.</div>
+        </div>
+    </div>
+    <div id="group2" class="parallax__group">
+        <div class="parallax__layer parallax__layer--base">
+            <div class="title">Focus on a point on the horizon furthest from you. Slowly trace a line from that point towards you touching every surface as if your eyes were a magic marker.</div>
+        </div>
+        <div class="parallax__layer parallax__layer--back">
+            <div class="title">Listen for the next loudest sound.  Keep progressing until you are listening to the loudest sound you can hear</div>
+        </div>
+    </div>
+    <div id="group3" class="parallax__group">
+        <div class="parallax__layer parallax__layer--fore">
+            <div class="title">Notice what heirarchies are created by what objects and boundaries are considered 'significant'</div>
+        </div>
+        <div class="parallax__layer parallax__layer--base">
+            <div class="title">Choose one square foot of ground.  Examine that square for an hour.</div>
+        </div>
+    </div>
+    <div id="group4" class="parallax__group">
+        <div class="parallax__layer parallax__layer--base">
+            <div class="title">Wait until it rains</div>
+        </div>
+        <div class="parallax__layer parallax__layer--back">
+            <div class="title">Find a park or green area near you.  Walk slowly, scanning the ground</div>
+        </div>
+        <div class="parallax__layer parallax__layer--deep">
+            <div class="title">Listen for the next loudest sound.  Keep progressing until you are listening to the loudest sound you can hear</div>
+        </div>
+    </div>
+    <div id="group5" class="parallax__group">
+        <div class="parallax__layer parallax__layer--fore">
+            <div class="title">take note of the evidence of the infrastructural network below your feet (fire hydrants, street lights, manhole covers)</div>
+        </div>
+        <div class="parallax__layer parallax__layer--base">
+            <div class="title">ask two questions and write them down</div>
+        </div>
+    </div>
+    <div id="group6" class="parallax__group">
+        <div class="parallax__layer parallax__layer--back">
+            <div class="title">After the 24 hour period we shared our data and noted similarities for different times and generated dance scores for periods of the day</div>
+        </div>
+        <div class="parallax__layer parallax__layer--base">
+            <div class="title">"Invite passersby to use chalk to map and amplify the micro-ecologies creeping through the sidewalk.</div>
+        </div>
+    </div>
+    <div id="group7" class="parallax__group">
+        <div class="parallax__layer parallax__layer--base">
+            <div class="title">Trace the horizon with your eyes.</div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block extra_js %}
+<script type="text/javascript" src={% static "archive/js/p_scores.js" %}></script>
+{% endblock extra_js %}

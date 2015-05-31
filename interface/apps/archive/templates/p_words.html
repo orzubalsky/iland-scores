@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}{{ block.super|title }} : Words/phrases{% endblock title %}
+
+{% block extra_css %}
+<link rel="stylesheet" type="text/css" href={% static "archive/css/p_words.css" %} />
+{% endblock extra_css %}
+
+{% block nav %}
+<nav>
+    <a class="home" href="{% url 'home' %}">&larr;</a>
+</nav>
+{% endblock nav %}
+
+{% block content %}
+<div class="score">
+    <p>
+        In <a class="sign">pairs</a>, pick location and watch clouds for 7mins
+    </p>
+    <p>
+        free-write for 7 minutes
+    </p>
+    <p>
+        Read your writing to one another. From your writing, (or from a provided cloud movement quote list) pick two phrases that will be instructions for a dance.
+    </p>
+    <p>
+        Solo for 5 mins with these instructions, then the witness reflects what they saw. Share. Change roles.
+    </p>
+  </div>
+  <div class="score">
+    <p>
+        In pairs, pick location and watch clouds for 7mins
+    </p>
+    <p>
+        free-write for 7 minutes
+    </p>
+    <p>
+        Read your writing to one another. From your writing, (or from a provided cloud movement quote list) pick two phrases that will be instructions for a dance.
+    </p>
+    <p>
+        Solo for 5 mins with these instructions, then the witness reflects what they saw. Share. <a class="sign">Change roles</a>.
+    </p>
+  </div>
+  <div class="score">
+    <p>
+        In pairs, pick location and <a class="sign">watch</a> clouds for 7mins
+    </p>
+    <p>
+        free-write for 7 minutes
+    </p>
+    <p>
+        Read your writing to one another. From your writing, (or from a provided cloud movement quote list) pick two phrases that will be instructions for a dance.
+    </p>
+    <p>
+        Solo for 5 mins with these instructions, then the witness reflects what they saw. Share. Change roles.
+    </p>
+  </div>
+  <div class="score">
+    <p>
+        In pairs, pick location and watch <a class="sign">clouds</a> for 7mins
+    </p>
+    <p>
+        free-write for 7 minutes
+    </p>
+    <p>
+        Read your writing to one another. From your writing, (or from a provided cloud movement quote list) pick two phrases that will be instructions for a dance.
+    </p>
+    <p>
+        Solo for 5 mins with these instructions, then the witness reflects what they saw. Share. Change roles.
+    </p>
+  </div>
+  <div class="score">
+    <p>
+        In pairs, pick location and watch clouds for 7mins
+    </p>
+    <p>
+        free-write for <a class="sign">7 minutes</a>
+    </p>
+    <p>
+        Read your writing to one another. From your writing, (or from a provided cloud movement quote list) pick two phrases that will be instructions for a dance.
+    </p>
+    <p>
+        Solo for 5 mins with these instructions, then the witness reflects what they saw. Share. Change roles.
+    </p>
+  </div>
+  <div class="score">
+    <p>
+        In pairs, pick location and watch clouds for 7mins
+    </p>
+    <p>
+        free-write for 7 minutes
+    </p>
+    <p>
+        <a class="sign">Read</a> your writing to one another. From your writing, (or from a provided cloud movement quote list) pick two phrases that will be instructions for a dance.
+    </p>
+    <p>
+        Solo for 5 mins with these instructions, then the witness reflects what they saw. Share. Change roles.
+    </p>
+  </div>
+  <div class="score">
+    <p>
+        In pairs, pick location and watch clouds for 7mins
+    </p>
+    <p>
+        free-write for 7 minutes
+    </p>
+    <p>
+        Read your writing to one another. From your writing, (or from a provided cloud movement quote list) pick two phrases that will be instructions for a dance.
+    </p>
+    <p>
+        <a class="sign">Solo</a> for 5 mins with these instructions, then the witness reflects what they saw. Share. Change roles.
+    </p>
+  </div>
+  <div class="score">
+    <p>
+        In pairs, pick location and watch clouds for 7mins
+    </p>
+    <p>
+        free-write for 7 minutes
+    </p>
+    <p>
+        Read your writing to one another. From your writing, (or from a provided cloud movement quote list) pick two phrases that will be instructions for a dance.
+    </p>
+    <p>
+        Solo for 5 mins with these instructions, then the <a class="sign">witness</a> reflects what they saw. Share. Change roles.
+    </p>
+</div>
+{% endblock content %}
+
+{% block extra_js %}
+<script type="text/javascript" src={% static "archive/js/p_scores.js" %}></script>
+<script type="text/javascript" src={% static "archive/js/p_words.js" %}></script>
+{% endblock extra_js %}

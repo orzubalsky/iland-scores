@@ -1,0 +1,57 @@
+@import 'susy';
+
+$susy: (
+  columns: 12,
+  gutter-position: inside,
+  math: fluid,
+  output: float,
+);
+
+$text-color: #141414;
+$link-color: blue;
+
+@mixin font-size() {
+    font-size: 10pt;
+    line-height: 1.7;
+}
+
+body {
+    font-family: monospace;
+    color: $text-color;
+    @include font-size;
+}
+
+main { @include container; }
+
+a {
+    text-decoration: none;
+
+    &:visited {
+        color: $link-color;
+    }
+
+    &:hover {
+        color: black;
+    }
+}
+
+.home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: blue;
+    color: white;
+    width: 30px;
+    height: 20px;
+    text-align: center;
+    z-index: 1000;
+
+    &:visited {
+        color: white;
+    }
+
+    &:hover {
+        background-color: black;
+    }
+}

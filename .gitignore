@@ -1,0 +1,24 @@
+*.pyc
+*.sass-cache
+*~
+.DS_Store
+
+# ignore buildout's workspace stuff:
+.installed.cfg
+.codekit-cache
+config.codekit
+fabfile.py
+bin/
+develop-eggs/
+eggs/
+parts/
+tmp/
+
+
+
+# ignore settings files:
+interface/settings/development.py
+interface/settings/server.py
+!interface/settings/__init__.py
+fab_config.py
+apache.conf

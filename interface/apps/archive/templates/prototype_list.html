@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% load admin_urls %}
+
+{% block title %}{{ block.super|title }} : Prototypes{% endblock title %}
+
+{% block extra_css %}
+{% endblock extra_css %}
+
+{% block content %}
+<h1>Prototypes</h1>
+<ul>
+    <li><a href="{% url 'p-columns' %}">Scores in 3 columns in random order</a></li>
+    <li><a href="{% url 'p-scroll' %}">Score fragments rearranging on scroll</a></li>
+    <li><a href="{% url 'p-words' %}">Words/phrases</a></li>
+</ul>
+
+<a href="{% url 'admin:archive_score_add' %}">Add a new score</a>
+{% endblock content %}
+
+{% block extra_js %}
+{% endblock extra_js %}
